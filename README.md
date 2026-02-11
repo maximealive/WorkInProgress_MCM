@@ -17,7 +17,8 @@
 2. **SUMO** (Simulation of Urban MObility)  
    [Install Guide](https://sumo.dlr.de/docs/Installing/index.html)
 
-3. **Docker + Vanetza-NAP** See the `README.md` file in the `vanetza-nap` repository.
+3. **Docker + Vanetza-NAP**  
+   See the `README.md` file in the `vanetza-nap` repository.
 
 ### Usage
 
