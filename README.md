@@ -95,13 +95,14 @@ v2x_simulator/
     └── mcm/                 # Maneuver Coordination Message (MCM)
         ├── __init__.py
         ├── base.py
-        ├── intent.py
+        ├── intent.py        # NOT tested, NOT implemented
         ├── request.py
         ├── response.py
         └── termination.py
 ```
 ## ToDo
 - Implement all MCM messages
+- python requirements.txt
 
 ## References
 - ETSI EN 302 637-2 V1.3.1 (2014-09)
