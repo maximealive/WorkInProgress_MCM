@@ -48,3 +48,18 @@
    ```
    > Note: Inside this file, it is possible to change the random seed and the number of vehicles.
 
+## ToDo
+- Implement all MCM messages
+
+## References
+- ETSI EN 302 637-2 V1.3.1 (2014-09)
+- ETSI TR 103 578 V2.1.1 (2024-04)
+
+### Tools & Libraries
+* **[Vanetza](https://github.com/nap-it/vanetza-nap)** - The open-source implementation of the ETSI C-ITS protocol suite used in this project.
+* **[Eclipse SUMO](https://www.eclipse.org/sumo/)** - Simulation of Urban MObility, used for traffic generation.
+
+### Documentation & Standards
+* **[ETSI ITS Standards](https://www.etsi.org/technologies/automotive-intelligent-transportation)** - Standards for Intelligent Transport Systems (V2X).
+* **[Docker Documentation](https://docs.docker.com/)** - Reference for container deployment.
+
