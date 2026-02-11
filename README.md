@@ -49,6 +49,57 @@
    ```
    > Note: Inside this file, it is possible to change the random seed and the number of vehicles.
 
+## Project Structure
+
+The Python simulation logic is organized as follows:
+
+```text
+v2x_simulator/
+├── main.py                  # Entry point of the simulation
+├── config.py                # Configuration parameters (Scenario, MQTT, etc.)
+├── mqtt_manager.py          # Handles MQTT connection and publishing
+├── utils.py                 # Utility functions
+├── compare_results.py       # Compare results between BASELINE and V2X genereted in the results folder
+├── batch_run.py             # Multiple Simulations with different seed, number of vehicles and BASELINE - V2X
+├── analyze_batch.py         # Compare results obtained from batch_run.py
+├── camCars.rou.xml          # SUMO files
+├── camMap.net.xml
+├── camMap.sumo.cfg
+|
+├── results/
+│   ├── baseline_stats.xml
+│   ├── baseline_tripinfo.xml
+│   ├── v2x_stats.xml
+│   └── v2x_tripinfo.xml
+│
+├── entities/                # Simulation entities
+│   ├── __init__.py
+│   ├── base.py
+│   ├── rsu.py
+│   └── vehicle.py
+│
+├── triggers/                # Logic for triggering messages based on events
+│   ├── __init__.py
+│   ├── base.py
+│   ├── etsi_cam_trigger.py
+│   └── mcm_trigger.py
+│
+└── messages/                # V2X Message definitions and encoding
+    ├── __init__.py          # Exposes MessageFactory
+    ├── base.py              # Base Message class
+    │
+    ├── cam/                 # Cooperative Awareness Message (CAM)
+    │   ├── __init__.py
+    │   └── message.py
+    │
+    └── mcm/                 # Maneuver Coordination Message (MCM)
+        ├── __init__.py
+        ├── base.py
+        ├── intent.py
+        ├── request.py
+        ├── response.py
+        └── termination.py
+```
 ## ToDo
 - Implement all MCM messages
 
