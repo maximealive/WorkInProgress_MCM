@@ -34,16 +34,17 @@
    docker-compose up
    ```
    
-4. Run a Single Simulation: Navigate to the V2X folder and run:
+4. **Run a Single Simulation** -> navigate to the V2X folder and run:
    ```bash
    python3 main.py
    ```
-   Note1: In config.py it is possible to switch between the default SUMO behavior (BASELINE) or SUMO with Python script interaction (V2X).
-   Note2: In config.py it is possible to change the seed parameter
+   > Note: Edit config.py to:  
+   > * Switch SIMULATION_MODE between BASELINE (default SUMO) and V2X (Python interaction).  
+   > * Change the seed parameter.
    
-6. Run Multiple Simulations: To run consecutive simulations, execute:
+5. **Run Multiple Simulations**-> navigate to the V2X folder and run:
    ```bash
    python3 batch_run.py
    ```
-   Note: Inside this file, it is possible to change the random seed and the number of vehicles.
+   > Note: Inside this file, it is possible to change the random seed and the number of vehicles.
 
