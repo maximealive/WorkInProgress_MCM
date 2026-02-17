@@ -19,6 +19,7 @@
 
 3. **Docker + Vanetza-NAP**  
    See the `README.md` file in the `vanetza-nap` repository.
+   > **Note:** Currently, please ensure you use the **`main`** branch (not `master`) to ensure compatibility.
 
 ### Usage
 
@@ -26,7 +27,10 @@
 
 2. **Configure vanetza-nap:**
    Navigate to your local `vanetza-nap` repository and replace the following files with the versions provided in this repository:
-   * Replace `vanetza-nap/docker-compose.yml`
+   * Replace `vanetza-nap/docker-compose.yml`  
+     > **Note**: Open `docker-compose.yml` and update the `image` path to point to the public registry:  
+     > **Find:** `image: code.nap.av.it.pt:5050/mobility-networks/vanetza:latest`  
+     > **Replace with:** `image: ghcr.io/nap-it/vanetza-nap:latest`
    * Replace `vanetza-nap/tools/socktap/config.ini`
 
 3. **Start the environment:**
