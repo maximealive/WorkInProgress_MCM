@@ -111,6 +111,9 @@ v2x_simulator/
 ## References
 - ETSI EN 302 637-2 V1.3.1 (2014-09)
 - ETSI TR 103 578 V2.1.1 (2024-04)
+- Vanetza-NAP: 
+  R. Rosmaninho, A. Figueiredo, P. Almeida, P. Rito, D. Raposo and S. Sargento, *"Vanetza-NAP: Vehicular Communications and Services in MicroServices Architectures,"* 2024 IEEE Vehicular Networking Conference (VNC), Kobe, Japan, 2024, pp. 297-304.  
+  [DOI: 10.1109/VNC61989.2024.10575959](https://doi.org/10.1109/VNC61989.2024.10575959)
 
 ### Tools & Libraries
 * **[Vanetza](https://github.com/nap-it/vanetza-nap)** - The open-source implementation of the ETSI C-ITS protocol suite used in this project.
