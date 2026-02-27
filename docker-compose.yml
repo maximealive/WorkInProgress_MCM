@@ -9,7 +9,7 @@ services:
         environment:
             - VANETZA_STATION_ID=0
             - VANETZA_STATION_TYPE=15
-            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:00
+            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:10
             - VANETZA_INTERFACE=br0
             - START_EMBEDDED_MOSQUITTO=true
             - SUPPORT_MAC_BLOCKING=true 
@@ -32,7 +32,7 @@ services:
         environment:
             - VANETZA_STATION_ID=1
             - VANETZA_STATION_TYPE=5
-            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:01
+            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:20
             - VANETZA_INTERFACE=br0
             - START_EMBEDDED_MOSQUITTO=true
             - SUPPORT_MAC_BLOCKING=true
@@ -54,7 +54,7 @@ services:
         environment:
             - VANETZA_STATION_ID=2
             - VANETZA_STATION_TYPE=5
-            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:02
+            - VANETZA_MAC_ADDRESS=6e:06:e0:03:00:30
             - VANETZA_INTERFACE=br0
             - START_EMBEDDED_MOSQUITTO=true
             - SUPPORT_MAC_BLOCKING=true
