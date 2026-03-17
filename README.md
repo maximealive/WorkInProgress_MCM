@@ -102,8 +102,14 @@ v2x_simulator/
         └── termination.py
 ```
 ## ToDo
-- Implement all MCM messages
-- python requirements.txt
+- **MCM Enhancement & Coordination Logic:**
+  - Complete implementation of all MCM message types (Intents, etc.).
+  - Transition to **dynamic parameter population** (e.g., `cooperation costs`, `itssrole`).
+  - Implement **Dynamic Coordination Mode Switching**: transition between **Agreement-seeking** and **Prescriptive** modes during emergency scenarios.
+- **Network Emulation:**
+  - Integrate **docker-netem** (or similar tools like `tc-netem`) to simulate realistic V2X network conditions (latency, packet loss, bandwidth limits) between Docker containers.
+- **Project Setup:**
+  - Create `requirements.txt` for Python dependencies.
 
 ## References
 - ETSI EN 302 637-2 V1.3.1 (2014-09)
